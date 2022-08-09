@@ -4,17 +4,17 @@
   align-items: flex-start;
   background-color: var(--black);
   display: flex;
-  height: 1078px; /*1078px */
+  height: 1080px; /*1078px */
   overflow: hidden;
   width: 1920px; /*1920px */
 }
 
 .home .overlap-group3 {
-  height: 1089px;
+  height: 100%;
   margin-left: -8px;
   margin-top: -10px;
   position: relative;
-  width: 2100px;
+  width: 100%;
 }
 
 .home .slide_01 {
@@ -55,7 +55,7 @@
 
 .home .overlap-group2 {
   height: 120px;
-  margin-top: 38px;
+  margin-top: 8px;
   position: relative;
   width: 227px;
 }
@@ -84,6 +84,8 @@
   text-align: center;
   top: 120px;
   white-space: nowrap;
+  font-family: var(--font-family-bahnschrift-bold);
+  font-size: var(--font-size-m);
 }
 
 .home .btn_casestudy {
@@ -93,18 +95,46 @@
   height: 80px;
   justify-content: flex-end;
   margin-right: 35px;
-  margin-top: 54px;
+  margin-top: 235px;
   min-width: 140px;
   padding: 20px 31px;
-  box-shadow: inset var(--white);
+  box-shadow: inset var(--orange);
   outline: none;
+  transition: ease-out 0,3s;
+  z-index: 1;
+  position: absolute;
   
 }
 
+
 .home .btn_casestudy:hover {
-  box-shadow: inset 140px var(--white);
   cursor: pointer;
   color: white;
+}
+
+
+.home .btn_casestudy:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: orangered;
+  
+  
+}
+
+
+.home .btn_casestudy:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+
 }
 
 
@@ -184,7 +214,8 @@
   align-items: flex-start;
   display: flex;
   margin-top: 47px;
-  min-width: 106px;
+  min-width: 100px;
+  position: absolute;
 }
 
 .home .btn_prev {
@@ -193,15 +224,42 @@
   display: flex;
   height: 70px;
   justify-content: flex-end;
-  min-width: 60px;
+  min-width: 30px;
   padding: 29.7px 22.8px;
   box-shadow: inset var(--black);
   outline: none;
+  z-index: 1;
+  transition: ease-out 0,5s;
+ 
 }
 .home .btn_prev:hover {
   box-shadow: inset var(--white);
   cursor: pointer;
   color: white;
+}
+
+.home .btn_prev:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  width: 55px;
+  background-color: orangered;
+}
+
+
+.home .btn_prev:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+
 }
 .home .chevron-small-right {
   height: 11px;
@@ -214,11 +272,16 @@
   background-color: var(--orange);
   display: flex;
   height: 70px;
-  margin-left: -10px;
-  min-width: 30px;
-  padding: 29.7px 22.9px;
+  justify-content: flex-end;
+  min-width: -100x;
+  padding: 29.7px 22.8px;
   box-shadow: inset var(--orange);
   outline: none;
+ 
+}
+.home .btn_next:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .home .menu {
@@ -244,7 +307,7 @@
   display: flex;
   height: 102px;
   margin-top: 4.0px;
-  width: 200px;
+  width: 225px;
   border: var(--white);
   text-align: center;
   outline: var(--white);
@@ -299,14 +362,14 @@
   display: flex;
   height: 102px;
   margin-top: 4.0px;
-  width: 200px;
+  width: 225px;
   border: var(--white);
   outline: var(--white);
   color: var(--white);
   transition: ease-out 0,3s;
   z-index: 1;
   position: absolute;
-  margin-left: 120px;
+  margin-left: 148px;
 }
 .home .btn-1:hover {
   cursor: pointer;
@@ -350,35 +413,102 @@
 
 .home .btn-2 {
   display: flex;
-  height: 14px;
-  margin-left: 157px;
+  height: 102px;
   margin-top: 4.0px;
-  width: 58px;
+  width: 225px;
+  border: var(--white);
+  outline: var(--white);
+  color: var(--white);
+  transition: ease-out 0,3s;
+  z-index: 1;
+  position: absolute;
+  margin-left: 373px;
 }
 
+.home .btn-2:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+.home .btn-2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: orangered;
+}
+
+
+.home .btn-2:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+
+}
 .home .brands {
   flex: 1;
   letter-spacing: 0.42px;
-  line-height: 14px;
+  line-height: 102px;
   margin-bottom: -2px;
   margin-right: -2px;
   text-align: center;
   white-space: nowrap;
-  width: 58px;
+  width: 68px;
 }
 
 .home .btn-3 {
   display: flex;
-  height: 14px;
-  margin-left: 144px;
+  height: 102px;
   margin-top: 4.0px;
-  width: 92px;
+  width: 225px;
+  border: var(--white);
+  outline: var(--white);
+  color: var(--white);
+  transition: ease-out 0,3s;
+  z-index: 1;
+  position: absolute;
+  margin-left: 598px;
+}
+
+.home .btn-3:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+.home .btn-3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: orangered;
+}
+
+
+.home .btn-3:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+
 }
 
 .home .references {
   flex: 1;
   letter-spacing: 0.42px;
-  line-height: 14px;
+  line-height: 102px;
   margin-bottom: -2px;
   margin-right: -2px;
   text-align: center;
@@ -387,17 +517,46 @@
 }
 
 .home .btn-4 {
-  
+  display: flex;
+  height: 105px;
+  margin-top: 4.0px;
+  width: 225px;
   background-image: url(../img/bg-4@1x.png);
   background-position: 50% 50%;
   background-size: cover;
-  display: flex;
-  height: 98px;
-
-  margin-left: 68px;
-  width: 270px;
+  outline: none;
+  transition: ease-out 0,3s;
+  z-index: 1;
+  position: absolute;
+  margin-left: 823px;
+}
+.home .btn-4:hover {
+  cursor: pointer;
+  color: white;
 }
 
+
+.home .btn-4:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: orangered;
+}
+
+
+.home .btn-4:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+
+}
 .home .place-1 {
   color: var(--white);
   flex: 1;
@@ -407,8 +566,9 @@
   letter-spacing: 0.42px;
   line-height: 14px;
   margin-bottom: 38px;
-  margin-left: 5px;
+  margin-left: 65px;
   margin-right: 90px;
+  outline: none;
   margin-top: 44px;
   text-align: center;
   white-space: nowrap;
