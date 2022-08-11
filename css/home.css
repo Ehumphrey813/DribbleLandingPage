@@ -4,17 +4,17 @@
   align-items: flex-start;
   background-color: var(--black);
   display: flex;
-  height: 1080px; /*1078px */
   overflow: hidden;
-  width: 1920px; /*1920px */
+  width: 1902px;
+  height: 1080px;
 }
 
 .home .overlap-group3 {
-  height: 100%;
+  height: 1079px; /*1089px */
   margin-left: -8px;
   margin-top: -10px;
   position: relative;
-  width: 100%;
+  width: 2100px; /*2100px */
 }
 
 .home .slide_01 {
@@ -25,7 +25,7 @@
   height: 1080px;
   justify-content: space-between;
   left: 0;
-  position: absolute;
+ 
   top: 0;
   width: 1920px;
 }
@@ -54,7 +54,7 @@
 }
 
 .home .overlap-group2 {
-  height: 120px;
+  height: 160px;
   margin-top: 8px;
   position: relative;
   width: 227px;
@@ -106,12 +106,10 @@
   
 }
 
-
 .home .btn_casestudy:hover {
   cursor: pointer;
   color: white;
 }
-
 
 .home .btn_casestudy:before {
   transition: 0.5s all ease;
@@ -123,10 +121,7 @@
   opacity: 0;
   content: "";
   background-color: orangered;
-  
-  
 }
-
 
 .home .btn_casestudy:hover:before {
   transition: 0.5s all ease;
@@ -136,7 +131,6 @@
   z-index: -1;
 
 }
-
 
 .home .surname {
   align-self: center;
@@ -161,7 +155,7 @@
 
 .home .overlap-group1 {
   height: 668px;
-  position: relative;
+  position: absolute;
   width: 106px;
 }
 
@@ -214,8 +208,7 @@
   align-items: flex-start;
   display: flex;
   margin-top: 47px;
-  min-width: 100px;
-  position: absolute;
+
 }
 
 .home .btn_prev {
@@ -224,43 +217,19 @@
   display: flex;
   height: 70px;
   justify-content: flex-end;
-  min-width: 30px;
+  min-width: -111px;
   padding: 29.7px 22.8px;
   box-shadow: inset var(--black);
   outline: none;
-  z-index: 1;
-  transition: ease-out 0,5s;
+  
  
 }
 .home .btn_prev:hover {
-  box-shadow: inset var(--white);
+  background-color: orangered;
   cursor: pointer;
   color: white;
 }
 
-.home .btn_prev:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0%;
-  right: 100%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  width: 55px;
-  background-color: orangered;
-}
-
-
-.home .btn_prev:hover:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
-
-}
 .home .chevron-small-right {
   height: 11px;
   object-fit: cover;
@@ -273,13 +242,15 @@
   display: flex;
   height: 70px;
   justify-content: flex-end;
-  min-width: -100x;
+  min-width: -10x;
   padding: 29.7px 22.8px;
   box-shadow: inset var(--orange);
   outline: none;
  
+ 
 }
 .home .btn_next:hover {
+  background-color: black;
   cursor: pointer;
   color: white;
 }
@@ -290,7 +261,7 @@
   left: 830px;
   position: absolute;
   top: 991px;
-  width: 1270px;
+  width: 1060px;
 }
 
 .home .menu-1 {
@@ -299,7 +270,7 @@
   display: flex;
   flex: 1;
   height: 98px;
-  min-width: 1270px;
+  min-width: 1080px;
   padding: 0 77px;
 }
 
