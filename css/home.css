@@ -5,16 +5,16 @@
   background-color: var(--black);
   display: flex;
   overflow: hidden;
-  width: 1902px;
+  width: 1900px;
   height: 1080px;
 }
 
 .home .overlap-group3 {
-  height: 1079px; /*1089px */
+  height: 1079px; 
   margin-left: -8px;
   margin-top: -10px;
   position: relative;
-  width: 2100px; /*2100px */
+  width: 2100px; 
 }
 
 .home .slide_01 {
@@ -207,8 +207,9 @@
 .home .btn_-container {
   align-items: flex-start;
   display: flex;
-  margin-top: 47px;
-
+  margin-top: 67px;
+  min-width: flex;
+  margin-left: -5px;
 }
 
 .home .btn_prev {
@@ -217,11 +218,10 @@
   display: flex;
   height: 70px;
   justify-content: flex-end;
-  min-width: -111px;
   padding: 29.7px 22.8px;
   box-shadow: inset var(--black);
   outline: none;
-  
+  width: 15px;
  
 }
 .home .btn_prev:hover {
@@ -242,11 +242,10 @@
   display: flex;
   height: 70px;
   justify-content: flex-end;
-  min-width: -10x;
   padding: 29.7px 22.8px;
   box-shadow: inset var(--orange);
   outline: none;
- 
+  width: 20px;
  
 }
 .home .btn_next:hover {
@@ -489,18 +488,20 @@
 
 .home .btn-4 {
   display: flex;
-  height: 105px;
+  height: 102px;
   margin-top: 4.0px;
   width: 225px;
+  border: var(--orangered);
   background-image: url(../img/bg-4@1x.png);
   background-position: 50% 50%;
   background-size: cover;
-  outline: none;
   transition: ease-out 0,3s;
+  background-color: orangered;
   z-index: 1;
   position: absolute;
   margin-left: 823px;
 }
+
 .home .btn-4:hover {
   cursor: pointer;
   color: white;
@@ -537,9 +538,9 @@
   letter-spacing: 0.42px;
   line-height: 14px;
   margin-bottom: 38px;
-  margin-left: 65px;
+  margin-left: 55px;
   margin-right: 90px;
-  outline: none;
+  background-color: orangered;
   margin-top: 44px;
   text-align: center;
   white-space: nowrap;
@@ -614,7 +615,7 @@
   color: var(--white);
   font-family: var(--font-family-bahnschrift-bold);
   font-size: var(--font-size-s);
-  font-weight: 700;
+  font-weight: 780;
   letter-spacing: 0.30px;
   line-height: 10px;
   min-height: 12px;
